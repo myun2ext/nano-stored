@@ -11,10 +11,18 @@ enum ns_types {
   ns_type_long=6,				/* 6: Long(64bit) Type */
   ns_type_u_long,				/* 7: Unsigned Long(64bit) Type */
 
-  ns_type_string=8,				/* 8: String */
+  ns_type_string=8,				/* 8: String (Max 255 byte length) */
+  ns_type_long_string,			/* 9: Long String (Max 65535 byte length) */
+  ns_type_ll_string,			/* 10: Long Long String (length max is 32bit) */
+  ns_type_mini_string,			/* 11: Mini String (Max 16byte length) */
+  ns_type_short_string,			/* 12: Short String (Max 4byte length) */
+  ns_type_64_string,			/* 13: 64bytes String */
 
   ns_type_float=16,				/* 16: Float Type (32bit) */
   ns_type_double,				/* 17: Double Type (64bit) */
+
+  ns_type_class=254,			/* 254: Class */
+  ns_type_unknown=255			/* 255: Unknown */
 };
 
 #endif//__MYUN2_GITHUB__NANO_STORED__TYPES_H__
