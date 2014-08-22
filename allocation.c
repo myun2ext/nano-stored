@@ -1,4 +1,5 @@
 #include <memory.h>
+#include <stdlib.h>
 
 typedef struct
 {
@@ -8,8 +9,20 @@ typedef struct
 
 ns_memory_handle ns_alloc(unsigned long size)
 {
-  ns_memory_ptr p;
-  p.ptr = malloc(size);
-  p.size = size;
+  ns_memory_handle p = (ns_memory_handle) calloc(1, sizeof(ns_memory_ptr));
+  p->ptr = calloc(size, 1);
+  p->size = size;
   return p;
+}
+
+void ns_realloc(ns_memory_handle h, unsigned long size)
+{
+  h->ptr = realloc(h->ptr, size);
+  h->size = size;
+}
+
+void ns_free(ns_memory_handle p)
+{
+  free(p->ptr);
+  free(p);
 }
