@@ -9,7 +9,7 @@ typedef enum {
 typedef struct {
   ns_bank_persistent_method method;
   unsigned int reserved_1;
-  unsigned int reserved_2;
+  unsigned int block_size;
   unsigned int reserved_3;
   unsigned int reserved_4;
   unsigned int reserved_5;
