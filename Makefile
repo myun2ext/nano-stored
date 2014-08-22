@@ -1,3 +1,3 @@
 all:
-	gcc test.c -I include -O3 -o a.out
+	gcc writer.c test.c -I include -O3 -o a.out
 	./a.out

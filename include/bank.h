@@ -2,8 +2,8 @@
 #define __MYUN2_GITHUB__NANO_STORED__BANK_H__
 
 typedef enum {
-  memory,
-  file
+  ns_persistent_memory,
+  ns_persistent_file
 } ns_bank_persistent_method;
 
 typedef struct {
