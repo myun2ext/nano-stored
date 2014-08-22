@@ -6,6 +6,8 @@
 
 int main()
 {
-  printf("%lu\n", sizeof(ns_record_t));
+  printf("%lu\n", sizeof(ns_block_t));
+  printf("%lu\n", sizeof(ns_double_block_t));
+  printf("%lu\n", sizeof(ns_triple_block_t));
   return 0;
 }
