@@ -7,6 +7,7 @@
 int main()
 {
   printf("Single Entry size:        %lu\n", sizeof(ns_entry_t));
+  printf("ns_data_type size:        %lu\n", sizeof(ns_block_header));
   printf("------------------------------\n");
   printf("Single Block size:        %lu\n", sizeof(ns_block_t));
   printf("Double Block size:        %lu\n", sizeof(ns_double_block_t));
