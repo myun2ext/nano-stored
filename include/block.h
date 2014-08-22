@@ -62,4 +62,28 @@ typedef struct
   ns_entry_data_t entries[NS_BLOCK_LENGTH * 256];
 } ns_uvl_block_t, ns_ultra_very_large_block;
 
+/* 64KB Block */
+typedef struct
+{
+  ns_entry_data_t entries[NS_BLOCK_LENGTH * 512];
+} ns_64kb_block_t;
+
+/* 128KB Block */
+typedef struct
+{
+  ns_entry_data_t entries[NS_BLOCK_LENGTH * 1024];
+} ns_128kb_block_t;
+
+/* 256KB Block */
+typedef struct
+{
+  ns_entry_data_t entries[NS_BLOCK_LENGTH * 2048];
+} ns_256kb_block_t;
+
+/* 512KB Block */
+typedef struct
+{
+  ns_entry_data_t entries[NS_BLOCK_LENGTH * 4096];
+} ns_512kb_block_t;
+
 #endif//__MYUN2_GITHUB__NANO_STORED__BLOCK_H__

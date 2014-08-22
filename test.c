@@ -17,5 +17,10 @@ int main()
   printf("XLarge Block size:        %lu\n", sizeof(ns_xl_block_t));
   printf("Very Large Block:         %lu\n", sizeof(ns_vl_block_t));
   printf("Ultra Very Large Block:   %lu\n", sizeof(ns_uvl_block_t));
+  printf("---------------------------------\n");
+  printf("64KB Block size:          %lu\n", sizeof(ns_64kb_block_t));
+  printf("128KB Block size:         %lu\n", sizeof(ns_128kb_block_t));
+  printf("256KB Block size:         %lu\n", sizeof(ns_256kb_block_t));
+  printf("512KB Block size:         %lu\n", sizeof(ns_512kb_block_t));
   return 0;
 }
