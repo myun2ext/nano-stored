@@ -6,6 +6,8 @@
 
 int main()
 {
+  printf("Single Entry size:        %lu\n", sizeof(ns_entry_t));
+  printf("------------------------------\n");
   printf("Single Block size:        %lu\n", sizeof(ns_block_t));
   printf("Double Block size:        %lu\n", sizeof(ns_double_block_t));
   printf("Triple Block size:        %lu\n", sizeof(ns_triple_block_t));
@@ -18,6 +20,7 @@ int main()
   printf("Very Large Block:         %lu\n", sizeof(ns_vl_block_t));
   printf("Ultra Very Large Block:   %lu\n", sizeof(ns_uvl_block_t));
   printf("---------------------------------\n");
+  printf("32KB Block size:          %lu\n", sizeof(ns_32kb_block_t));
   printf("64KB Block size:          %lu\n", sizeof(ns_64kb_block_t));
   printf("128KB Block size:         %lu\n", sizeof(ns_128kb_block_t));
   printf("256KB Block size:         %lu\n", sizeof(ns_256kb_block_t));
