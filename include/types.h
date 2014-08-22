@@ -1,7 +1,7 @@
 #ifndef __MYUN2_GITHUB__NANO_STORED__TYPES_H__
 #define __MYUN2_GITHUB__NANO_STORED__TYPES_H__
 
-typedef enum {
+typedef enum ns_type_e {
   ns_type_null=0,				/* 0: Null Type */
   ns_type_int,					/* 1: Integer Type (32bit) */
   ns_type_char,					/* 2: 1byte(C char like) Type */

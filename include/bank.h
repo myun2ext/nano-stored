@@ -1,6 +1,8 @@
 #ifndef __MYUN2_GITHUB__NANO_STORED__BANK_H__
 #define __MYUN2_GITHUB__NANO_STORED__BANK_H__
 
+#include "types.h"
+
 typedef enum {
   ns_persistent_memory,
   ns_persistent_file
